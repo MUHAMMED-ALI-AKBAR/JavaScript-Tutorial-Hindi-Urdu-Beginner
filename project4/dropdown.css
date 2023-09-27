@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+body {
+  background-image: url("./world.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.menubar {
+  background-color: green;
+  width: 80%;
+  margin: 0px auto;
+  height: 80px;
+}
+.menubar ul {
+  text-align: center;
+  display: inline-flex;
+  list-style: none;
+}
+.menubar ul li {
+  width: 150px;
+  margin: 15px;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1.4px;
+}
+.menubar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+}
+.menubar ul li :hover {
+  background: rgb(21, 182, 21);
+}
+.submenu1 {
+  display: none;
+  overflow: hidden;
+}
+.menubar ul li:hover .submenu1 {
+  display: block;
+  background: rgb(21, 182, 21);
+  width: 150px;
+}
+.menubar ul li:hover .submenu1 ul {
+  display: block;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  /* background-color: grey; */
+  background-color: green;
+}
+
+.menubar ul li:hover .submenu1 ul li {
+  border-bottom: 1px solid green;
+  float: right;
+  border-bottom: 1px solid;
+}
+.menubar ul li:hover .submenu1 :last-child {
+  border-bottom: none;
+}
+.menubar ul li:hover .submenu1 ul li :last-child {
+  border-bottom: none;
+}
+ul li i {
+  float: left;
+  position: absolute;
+}
+
+.submenu2 {
+  display: none;
+}
+.hoverme:hover .submenu2 {
+  text-align: center;
+  position: absolute;
+  display: flex;
+  color: black;
+  margin-left: 120px;
+  margin-top: -40px;
+}
+.submenu3 {
+  display: none;
+}
+.hoverme2:hover .submenu3 {
+  text-align: center;
+  position: absolute;
+  display: flex;
+  color: black;
+  margin-left: 140px;
+  margin-top: -40px;
+}
